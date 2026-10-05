@@ -4,30 +4,40 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Realiteez Custom Creations</title>
-  <meta name="description" content="Custom t-shirts, hoodies, memorial tees, event shirts, and brand merch printed from your idea. Screen print, DTG, and embroidery.">
-  <meta name="theme-color" content="#e0431b">
+  <meta name="description" content="Realiteez Custom Creations: custom apparel with a creator-first process. Personalized designs, DIY print service, and original printed tees, all under one roof.">
+  <meta name="theme-color" content="#f0521b">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Realiteez Custom Creations — Wear your reality.">
+  <meta property="og:title" content="Realiteez Custom Creations — Your idea. Your tee. Your Realiteez.">
   <meta property="og:description" content="Custom tees, hoodies, and gear printed from your idea.">
   <meta property="og:image" content="/assets/og.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23e0431b'/%3E%3Ctext x='16' y='23' font-family='Arial Black,sans-serif' font-size='19' font-weight='900' text-anchor='middle' fill='%23fff'%3ER%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
-  <div class="sample" id="sample" hidden>Preview catalog — products and prices shown are samples until the full Realiteez lineup is added.</div>
+  <div class="sample" id="sample" hidden>Preview — products and prices shown are samples until the full Realiteez lineup is added.</div>
+
+  <div class="promo" role="region" aria-label="Current collection">
+    <div class="wrap">
+      <span class="side">October Awareness Collection</span>
+      <span>Pink Season · First Love Yourself · F.L.Y.</span>
+      <a class="side" href="#pink-season">See the collection →</a>
+    </div>
+  </div>
 
   <header class="site-header">
     <div class="wrap">
-      <a class="logo" href="#top">Realiteez<span>.</span></a>
+      <a class="logo" href="#top" aria-label="Realiteez Custom Creations home"><b>REALITEEZ<sup>®</sup></b><small>CUSTOM CREATIONS</small></a>
       <nav class="nav" aria-label="Main">
-        <a href="#shop">Shop</a>
-        <a href="#how">How it works</a>
-        <a href="#faq-section">FAQ</a>
-        <a class="btn btn-spot btn-sm" href="#order">Start an order</a>
+        <a href="#pink-season">Pink Season</a>
+        <a href="#shop">Collections</a>
+        <a href="#order">Create Your Tee</a>
+        <a href="#diy">DIY Prints</a>
+        <a href="#status">Order Status</a>
+        <a class="btn btn-sm btn-vault" href="#vault">🔒 Design Vault</a>
       </nav>
     </div>
   </header>
@@ -36,15 +46,16 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="wrap">
         <div>
-          <p class="label">Realiteez Custom Creations</p>
-          <h1 id="hero-title">Your idea.<br>Printed <em>for real.</em></h1>
-          <p class="pitch">Custom tees, hoodies, and gear made from your design — for brands, events, families, and one-of-one pieces.</p>
+          <p class="eyebrow">✺ Wear what is real to you</p>
+          <h1 id="hero-title">Your idea.<br><em>Your tee.</em><br>Your Realiteez.</h1>
+          <p class="pitch">Custom apparel with a creator-first process — personalized designs, DIY print service and original printed tees, all under one roof.</p>
           <div class="ctas">
-            <a class="btn btn-spot" href="#order">Start a custom order</a>
-            <a class="btn" href="#shop">See what we make</a>
+            <a class="btn btn-spot" href="#order">Create your tee →</a>
+            <a class="btn" href="#vault">Enter Design Vault 🔒</a>
           </div>
+          <div class="badges"><span>Creator approved</span><span>Private artwork handling</span></div>
         </div>
-        <div class="hero-tee" aria-hidden="true">
+        <div class="hero-tee" id="hero-visual" aria-hidden="true">
           <svg viewBox="0 0 200 190">
             <path d="M42 18 L64 10 C68 22 86 27 100 27 C114 27 132 22 136 10 L158 18 L196 42 L178 78 L156 66 L156 182 L44 182 L44 66 L22 78 L4 42 Z" fill="var(--paper)" stroke="var(--ink)" stroke-width="3.5" stroke-linejoin="round"/>
             <rect x="66" y="62" width="68" height="84" fill="none" stroke="var(--ink-soft)" stroke-width="1" stroke-dasharray="3 3"/>
@@ -54,6 +65,21 @@
             <g stroke="var(--ink-soft)" stroke-width="1" fill="none"><circle cx="186" cy="176" r="6"/><path d="M178 176h16M186 168v16"/><circle cx="14" cy="176" r="6"/><path d="M6 176h16M14 168v16"/></g>
           </svg>
         </div>
+      </div>
+    </section>
+
+    <section class="pink-season" id="pink-season" aria-labelledby="pink-title">
+      <div class="wrap split">
+        <div>
+          <p class="label">October Awareness Collection</p>
+          <h2 id="pink-title">Pink Season is <em>here.</em></h2>
+          <p style="margin-top:14px;max-width:46ch">First Love Yourself. The F.L.Y. collection is made for awareness month — wear it for yourself, for someone you love, and for everyone still fighting.</p>
+          <div class="ctas" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px">
+            <a class="btn btn-spot" href="#shop">Shop Pink Season</a>
+            <a class="btn" href="#order">Make a custom pink tee</a>
+          </div>
+        </div>
+        <p class="fly" aria-hidden="true">F.L.Y.</p>
       </div>
     </section>
 
@@ -92,11 +118,56 @@
       </div>
     </section>
 
+    <section id="diy" aria-labelledby="diy-title">
+      <div class="wrap split">
+        <div>
+          <p class="label">DIY Prints</p>
+          <h2 id="diy-title">Already have your design? We print it.</h2>
+          <p style="margin-top:14px;color:var(--ink-soft);max-width:46ch">Send us print-ready artwork and pick your blanks. No design fee, no back-and-forth — just clean, durable prints.</p>
+        </div>
+        <div class="panel">
+          <h3>How DIY printing works</h3>
+          <ul>
+            <li>Upload or link your artwork (PNG, PDF, AI, SVG)</li>
+            <li>Choose garment, colors, sizes, and print placement</li>
+            <li>Approve your proof, then we print and ship</li>
+          </ul>
+          <a class="btn btn-spot" href="#order">Start a DIY print order</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="vault" aria-labelledby="vault-title" style="padding-top:0">
+      <div class="wrap split">
+        <div class="panel">
+          <p class="label">🔒 Design Vault</p>
+          <h3 id="vault-title" style="font-size:var(--step-2)">Your artwork stays yours.</h3>
+          <ul>
+            <li>Every design is handled privately and never resold</li>
+            <li>Approved artwork is kept on file for easy reorders</li>
+            <li>Creator-approved proofs before anything prints</li>
+          </ul>
+          <a class="btn" href="#order">Request vault access with your order</a>
+        </div>
+        <div id="status">
+          <p class="label">Order Status</p>
+          <h2>Check on your order</h2>
+          <p style="margin-top:14px;color:var(--ink-soft);max-width:46ch">Enter the order number from your confirmation and we'll send you an update.</p>
+          <form class="status-form" id="status-form" novalidate style="margin-top:16px">
+            <label for="order-number" class="label" style="flex-basis:100%">Order number</label>
+            <input id="order-number" name="order" required maxlength="40" placeholder="e.g. RTZ-1042">
+            <button class="btn btn-spot" type="submit">Check status</button>
+          </form>
+          <p class="form-status" id="status-msg" role="status" aria-live="polite" style="color:var(--ink)"></p>
+        </div>
+      </div>
+    </section>
+
     <section class="order" id="order" aria-labelledby="order-title">
       <div class="wrap order-grid">
         <div class="order-aside">
           <p class="label">Custom order</p>
-          <h2 id="order-title">Tell us what you want made</h2>
+          <h2 id="order-title">Create your tee</h2>
           <p>We reply with a free mockup and an exact quote, usually within one business day.</p>
           <ul>
             <li>Free digital proof before anything prints</li>
@@ -135,8 +206,8 @@
   <footer>
     <div class="wrap">
       <div>
-        <a class="logo" href="#top">Realiteez<span>.</span></a>
-        <p class="fine">Custom Creations · Wear your reality.</p>
+        <a class="logo" href="#top"><b>REALITEEZ<sup>®</sup></b><small>CUSTOM CREATIONS</small></a>
+        <p class="fine">Custom Creations · Wear what is real to you.</p>
       </div>
       <div class="contact" id="contact"></div>
       <div class="social" id="social"></div>

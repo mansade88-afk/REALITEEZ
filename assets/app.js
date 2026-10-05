@@ -21,6 +21,13 @@
     b.hidden = false;
   }
 
+  // Hero photo (optional)
+  if (S.brand.heroImage) {
+    const v = $("#hero-visual");
+    v.removeAttribute("aria-hidden");
+    v.innerHTML = `<img class="hero-photo" src="${esc(S.brand.heroImage)}" alt="${esc(S.brand.heroImageAlt || "")}">`;
+  }
+
   // Steps
   $("#steps").innerHTML = S.steps
     .map(
@@ -159,6 +166,35 @@
       sel.removeAllRanges();
       sel.addRange(r);
       setStatus("Text selected. Press Ctrl/Cmd + C to copy.", "ok");
+    }
+  });
+
+  // Order status lookup (no order database yet: routes the request to the shop)
+  const statusForm = $("#status-form");
+  statusForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const msg = $("#status-msg");
+    const num = statusForm.order.value.trim();
+    if (!num) {
+      msg.textContent = "Enter the order number from your confirmation.";
+      return;
+    }
+    if (!isSafeUrl(S.formEndpoint)) {
+      msg.textContent = c.email
+        ? `Email ${c.email} with order ${num} and we'll reply with an update.`
+        : `Send us order ${num} by DM or text and we'll reply with an update.`;
+      return;
+    }
+    try {
+      const data = new FormData();
+      data.append("type", "order-status");
+      data.append("order", num);
+      const res = await fetch(S.formEndpoint, { method: "POST", body: data, headers: { Accept: "application/json" } });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      msg.textContent = `Got it. We'll send an update on order ${num} soon.`;
+    } catch (err) {
+      console.error("Order status request failed:", err);
+      msg.textContent = "That didn't go through. Check your connection and try again.";
     }
   });
 
